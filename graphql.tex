@@ -1,0 +1,100 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\mode<presentation>
+{
+  \usetheme{Madrid}
+  \usecolortheme{beaver}
+  \usefonttheme{default}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg}
+
+\title[GraphQL]{GraphQL}
+\author{Jakub Podeszwik}
+\institute{Yameo}
+\date{01.08.2018}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\begin{center}
+			\usebeamerfont{section title}\Large\insertsection
+		\end{center}
+	\end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{GraphQL}
+	\begin{enumerate}
+		\item Query language
+		\item Schema
+		\item Server side runtime
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Operations}
+	\begin{enumerate}
+		\item Queries
+		\item Mutations
+		\item Subscriptions
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Types}
+	\begin{enumerate}
+		\item Int
+		\item Float
+		\item String
+		\item Boolean
+		\item ID (like String)
+		\item Object
+		\item Enum
+		\item List
+		\item custom scalar types
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Features}
+	\begin{enumerate}
+		\item Aliases
+		\item Fragments
+		\item Parameters
+		\item Resolvers
+		\item Input types
+		\item Subscriptions
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Problems}
+	\begin{enumerate}
+		\item cache
+		\item immature
+		\item queries size
+		\item circular queries
+	\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+	\begin{enumerate}
+		\item https://www.howtographql.com
+	\end{enumerate}
+\end{frame}
+
+
+\end{document}
