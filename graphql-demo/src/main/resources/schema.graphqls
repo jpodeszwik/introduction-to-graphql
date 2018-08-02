@@ -1,0 +1,41 @@
+type Query {
+    hello(name: String!): String
+
+    company: Company
+
+    team(id: ID): Team
+}
+
+type Mutation {
+    addMember(command: AddMemberCommand): Member
+}
+
+type Subscription {
+    memberCreated(teamId: ID): Member
+}
+
+type Company {
+    name: String
+    address: Address
+}
+
+type Address {
+    street: String
+    city: String
+}
+
+type Team {
+    id: ID
+    name: String
+    members(limit: Int = 3): [Member]
+}
+
+type Member {
+    id: ID
+    name: String
+}
+
+input AddMemberCommand {
+    name: String
+    teamId: ID
+}
